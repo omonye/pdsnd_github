@@ -25,6 +25,8 @@ The Chicago and New York City files also have the following two columns:
 •	Gender
 •	Birth Year
 
+
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Dataset was gotten from https://www.motivateco.com through the Udacity course: Introduction to Python
+
 
