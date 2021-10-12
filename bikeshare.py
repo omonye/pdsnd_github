@@ -75,12 +75,12 @@ def load_data(city, month, day):
     return df
 
 def view_data(df):
-    view_data = input("Would you like to see history of your last 5 individual trip ? Enter yes or no?: ").upper()
+    view_data = input("Would you like to see history of your last 5 individual trip ? Enter yes or no?: ").lower()
     start_loc = 0
     while view_data != 'no':
         print(df.iloc[start_loc: start_loc + 5])
         start_loc += 5
-        view_data = input("Do you wish to continue?: ").upper()   
+        view_data = input("Do you wish to continue?: ").lower()   
 
         
 def time_stats(df):
