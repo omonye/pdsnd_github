@@ -58,8 +58,8 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extract month and day of week from Start Time to create new columns
-    df['month'] = df['Start Time'].dt.month_name().str.lower()
-    df['day_of_week'] = df['Start Time'].dt.day_name().str.lower()
+    df['month'] = df['Start Time'].dt.month_name().str.upper()
+    df['day_of_week'] = df['Start Time'].dt.day_name().str.upper()
 
     # filter by month if applicable
     if month != 'all':
@@ -75,7 +75,7 @@ def load_data(city, month, day):
     return df
 
 def view_data(df):
-    view_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?: ").lower()
+    view_data = input("Would you like to see history of your last 5 individual trip ? Enter yes or no?: ").lower()
     start_loc = 0
     while view_data != 'no':
         print(df.iloc[start_loc: start_loc + 5])
@@ -143,6 +143,10 @@ def trip_duration_stats(df):
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+    # TO DO: display longest travel time
+    max_time =['Trip Duration'].max()
+    print("The longest travel time is{}".format(max_time))
 
 
 def user_stats(df):
