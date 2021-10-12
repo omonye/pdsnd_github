@@ -144,6 +144,10 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+    # TO DO: display longest travel time
+    max_time =['Trip Duration'].max()
+    print("The longest travel time is{}".format(max_time))
+
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
