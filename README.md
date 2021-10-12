@@ -10,9 +10,11 @@ This is a descriptive analysis of bike share in three cities, Washington, Chicag
 
 
 ### Files used
-Washington csv file
-New_york_city csv file
-Chicago csv file
+The data files were save in CSV format
+
+Washington  file
+New_york_city file
+Chicago  file
 
 The above files contain randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
 •	Start Time (e.g., 2017-01-01 00:07:57)
